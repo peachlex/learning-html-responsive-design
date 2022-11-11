@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap);
+body{
+    background-color: hsl(30 38% 92%);
+
+}
+
+
+body .container {
+    
+    width: 600px;
+    height: 450px;
+    
+    margin: 150px 300px ;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.product-pic{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ .info {
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center ; */
+    padding: 30px ;
+    height: 100%;
+    width: 50%;
+    
+ 
+}
+.info :nth-child(1){order: 2;}
+.info :nth-child(2){order: 3;}
+.info :nth-child(3){order: 4;}
+.info :nth-child(4){order: 1;}
+.info :nth-child(5){order: 5;}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    margin: 7px 2px;
+    padding: 0;
+    line-height: 1;
+}
+
+ h2, p {
+    margin: 0;
+    color: hsl(228, 12%, 48%);
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;  
+    font-size: 14px;
+}
+
+p{
+    margin: 10px 0 5px 0;
+    line-height: 1.8;
+}
+
+h2 {
+    margin: 30px 0 10px 0;
+    text-transform: uppercase;
+    
+}
+
+.prices {
+   margin: 0 0 5px 0; 
+   padding: 0;
+    display: flex;
+    
+    align-items: baseline;
+}
+
+
+
+ p.new-price {
+    
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+}
+s.old-price{
+    margin: 20px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    align-self: center;
+}
+button  {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    margin: 5px 0;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600 ;
+   
+    
+}
+button:active{
+    background-color: hsl(212, 21%, 14%)
+}
