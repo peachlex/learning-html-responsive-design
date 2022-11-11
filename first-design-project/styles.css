@@ -2,16 +2,20 @@
 @import url(https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap);
 body{
     background-color: hsl(30 38% 92%);
+    
+    
 
 }
 
 
 body .container {
     
-    width: 600px;
-    height: 450px;
-    
-    margin: 150px 300px ;
+    position: absolute;
+    min-height: 450px;
+    min-width: 600px;
+    height: 52%;
+    width: 42%;
+    margin: 10% 29%;
     padding: 0;
     border-radius: 10px;
     background-color: white;
@@ -23,16 +27,17 @@ body .container {
 }
 
 .product-pic{
+    position: relative;
     width: 50%;
     height: 100%;
     object-fit: cover;
 }
 
  .info {
-    
+    position: relative;
     display: flex;
     flex-direction: column;
-    /* justify-content:center ; */
+    
     padding: 30px ;
     height: 100%;
     width: 50%;
@@ -53,7 +58,7 @@ h1 {
     line-height: 1;
 }
 
- h2, p {
+  p {
     margin: 0;
     color: hsl(228, 12%, 48%);
     font-weight: 400;
@@ -65,15 +70,17 @@ h1 {
 p{
     margin: 10px 0 5px 0;
     line-height: 1.8;
-}
-
-h2 {
-    margin: 30px 0 10px 0;
-    text-transform: uppercase;
     
 }
 
+p.name {
+    margin: 30px 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
 .prices {
+    position: relative;
    margin: 0 0 5px 0; 
    padding: 0;
     display: flex;
