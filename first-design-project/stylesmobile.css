@@ -1,46 +1,42 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap);
+
 body{
     background-color: hsl(30 38% 92%);
 }
 
-
-body .container {
-    
+.container {
     position: absolute;
-    min-height: 450px;
-    min-width: 600px;
-    height: 52%;
-    width: 42%;
-    margin: 10% 29%;
+    /* min-height: 610px;
+    min-width: 340px; */
+    height: 610px;
+    width: 340px;
+    margin: 3% 4%;
     padding: 0;
     border-radius: 10px;
     background-color: white;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    flex-direction: column-reverse;
+    overflow: hidden; 
 }
 
-.product-pic{
+.product-pic {
     position: relative;
-    width: 50%;
-    height: 100%;
+    width: 340px;
+    height: 240px;
     object-fit: cover;
 }
 
- .info {
+.info {
     position: relative;
     display: flex;
     flex-direction: column;
-    
-    padding: 30px ;
-    height: 100%;
-    width: 50%;
-    
- 
+   
+    margin: 10px;
+    height: 370px;
+    width: 320px;
 }
+
 .info :nth-child(1){order: 2;}
 .info :nth-child(2){order: 3;}
 .info :nth-child(3){order: 4;}
@@ -50,35 +46,39 @@ body .container {
 h1 {
     font-family: 'Fraunces', serif;
     font-size: 32px;
-    margin: 7px 2px;
-    padding: 0;
+    margin: 1px 2px;
+    padding: 5px 10px;
     line-height: 1;
 }
-
-  p {
-    margin: 0;
+p {
+    margin: 10px 0;
     color: hsl(228, 12%, 48%);
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     text-align: left;  
-    font-size: 14px;
+    font-size: 15px;
 }
 
 p.about{
-    margin: 10px 0 5px 0;
+   margin: 5px 5px 0 ;
+   padding: 5px;
     line-height: 1.8;
+    text-align: left;
+    word-spacing: 2px;
     
 }
 
 p.name {
-    margin: 30px 0 10px 0;
+    margin: 10px 10px 5px ;
+    padding: 5px 5px 0;
     text-transform: uppercase;
     letter-spacing: 7px;
+    font-size: 12px;
 }
 
 .prices {
     position: relative;
-   margin: 0 0 5px 0; 
+   margin: 0 10px; 
    padding: 0;
     display: flex;
     
@@ -90,7 +90,7 @@ p.name {
  p.new-price {
     
     color: hsl(158, 36%, 37%);
-    font-size: 30px;
+    font-size: 34px;
     font-family: 'Fraunces', serif;
 }
 s.old-price{
@@ -103,16 +103,17 @@ s.old-price{
 button  {
     background-color: hsl(158, 36%, 37%);
     border: none;
-    margin: 5px 0;
+    margin: 5px 15px;
     border-radius: 8px;
     color: white;
-    padding: 12px 64px;
+    padding: 10px 93px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600 ;
+    
    
     
 }
